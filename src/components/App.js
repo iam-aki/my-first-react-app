@@ -1,7 +1,8 @@
-    import React, { Component } from 'react';
-    import Home from './Home/Home';
-    import Header from './layouts/Header'; 
-    import './App.css';
+import React, { Component } from 'react';
+import Home from './Home/Home';
+import Header from './layouts/Header'; 
+import Footer from './layouts/Footer'; 
+import './App.css';
 
     class App extends Component {
         render() {
@@ -9,6 +10,7 @@
                 <div className="App">
                     <Header title="Welcome to Codejobs" /> 
                     <Home />
+                    <Footer />
                 </div>
             );
         }

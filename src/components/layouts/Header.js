@@ -11,7 +11,7 @@
 
         render() {
             const {
-                title = 'Welcome to React',
+                title = 'Welcome to React Header Component',
                 url = 'https://reactjs.org/'
             } = this.props;
 
