@@ -1,32 +1,31 @@
-import React, { Component } from 'react';
+    import React, { Component } from 'react';
+    import './Home.css';
 
-// We import our Home.css file here
-import './Home.css';
+    class Home extends Component {
+       constructor() {
+        super();
 
-  class Home extends Component {
-render() {
-return (
-        <div className="Home">
-          <h1>Welcome to Codejobs</h1>
-          <p>
-            In this recipe you will learn how to add styles to
-            components. If you want to learn more you can visit
-            our Youtube Channel at
-            <a href="http://youtube.com/codejobs">Codejobs</a>.
-          </p>
+        this.state = {
+            name: 'Carlos'
+        };
+    }
 
-          <p>
-            <button
-              style={{ 
-                backgroundColor: 'green',
-                border: '1px solid black'
-              }}
-            >
-              Click me!
-            </button>
-          </p>
-        </div>
-      );
+    componentDidMount() { 
+        setTimeout(() => {
+            this.setState({
+            name: 'Cristina'
+            });
+        }, 1000);
+    }
+
+    render() {
+        console.log('Name:', this.state.name);
+
+        return (
+            <div className="Home">
+                <p>Hi my name is {this.state.name}</p>
+            </div>
+        );
     }
   }
 
