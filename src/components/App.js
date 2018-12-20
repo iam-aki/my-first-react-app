@@ -4,7 +4,8 @@ import Popup from 'react-popup';
 import Header from './layouts/Header'; 
 import Footer from './layouts/Footer'; 
 import Content from './layouts/Content';
-import Person from './Person/Person'
+import Phrases from './Phrases/Phrases';
+import { notes1, notes2 } from './Notes/data';
 import './App.css';
 import './Popup.css';
 
@@ -14,7 +15,7 @@ import './Popup.css';
             <div className="App">
                 <Header title="XSS" />
                     <Content>
-                        <Person /> 
+                        <Phrases /> 
                     </Content>
                 <Footer />
                 <Popup />
